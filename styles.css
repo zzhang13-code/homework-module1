@@ -1,0 +1,322 @@
+header {
+    width: 100%;
+    min-height: 400px;
+    padding-top: 3em;
+}
+
+#home header {
+    background: no-repeat lightgrey url(images/cliff_ocean.jpg);
+    background-size: 1500px;
+}
+
+#activities header {
+    background: no-repeat lightgrey url(images/runfly.jpg);
+    background-size: 1500px;
+}
+
+#contact header {
+    background: no-repeat lightgrey url(images/cliff_rock.jpg);
+    background-size: 1500px;
+}
+
+.main-header {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 700px;
+    min-height: 100px;
+    height: 100px;
+    margin: 2em auto 0 auto;
+}
+
+.main-header .logo img {
+    width: 100px;
+    height: 100px;
+    margin: 0 2em 0 0;
+    float: left;
+}
+
+.main-menu {
+    margin-left: 227px;
+    font-weight: 400;
+}
+
+.main-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-left: solid 1px rgba(202, 204, 202, 0.6);
+}
+
+.main-menu li:first-child {
+    border-left: none;
+}
+
+.main-menu li a {
+    text-decoration: none;
+    color: #888;
+}
+
+.main-menu li a:hover {
+    color: #9ed034;
+}
+
+.main-menu li.active a {
+    color: #9ed034;
+}
+
+.main-menu li.active a:hover {
+    color: #b6e74a;
+}
+
+/* Main */
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main h1,
+main h2,
+main h3 {
+    color: #9ed034;
+}
+
+/* Partners */
+
+section {
+    width: 100%;
+    background-color: #4288C3;
+}
+
+section #partners {
+    width: 1200px;
+    padding: 2em 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section #partners .partner {
+    display: inline-block;
+    margin: 0 0.75em;
+    padding: 1.3em 1.5em;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+section #partners .partner img {
+    width: 90px;
+    height: 90px;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 155px;
+    padding-bottom: 1em;
+    background-color: #ecfab8;
+}
+
+footer #nondisclaimer .copy {
+    padding: 3.5em 3.5em 3.5em 13em;
+    float: left;
+    font-size: 0.9em;
+}
+
+footer #nondisclaimer .social {
+    padding: 2.5em;
+    margin-right: 9.25em;
+    float: right;
+}
+
+footer #disclaimer {
+    clear: both;
+}
+
+footer #disclaimer p {
+    margin: 0;
+    text-align: center;
+    font-size: 0.85em;
+}
+
+footer .social .fa {
+    padding: 15px;
+    width: 18px;
+    margin: 0 4px;
+    font-size: 1.3em;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer .social .fa:hover {
+    opacity: 0.7;
+}
+
+footer .social .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+footer .social .fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+footer .social .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+footer .social .fa-facebook,
+footer .social .fa-instagram,
+footer .social .fa-twitter {
+    border-radius: 50%;
+}
+
+/* Activities Table */
+
+table {
+    width: 1000px;
+    margin: 4em auto 0 auto;
+    border-collapse: collapse;
+}
+
+caption {
+    height: 40px;
+    padding-top: 1em;
+    background-color: #852B1B;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+thead {
+    background-color: #BDE1FF;
+}
+
+tbody {
+    background-color: #EEFFE6;
+    text-align: center;
+}
+
+th,
+td {
+    width: 225px;
+    height: 75px;
+    border: solid 1px #852B1B;
+    vertical-align: middle;
+}
+
+th:first-child {
+    width: 125px;
+    height: 50px;
+    background-color: #4977D1;
+    color: #fff;
+}
+
+td:first-child {
+    background-color: #BDE1FF;
+    font-weight: bold;
+}
+
+/* Contact */
+
+.contactinfo {
+    margin: 2em 0;
+}
+
+.contactinfo div {
+    margin-bottom: 0.5em;
+}
+
+.contactinfo span:first-child {
+    margin-right: 0.5em;
+    color: #4977D1;
+    font-weight: bold;
+}
+
+form {
+    width: 500px;
+    margin: 2em auto;
+}
+
+fieldset {
+    padding: 2em;
+    border: solid 1px #9ed034;
+}
+
+legend {
+    color: #4977D1;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+form label {
+    font-weight: bold;
+}
+
+.textbox label {
+    display: block;
+    margin-top: 1em;
+}
+
+.textbox input {
+    width: 100%;
+    height: 30px;
+    margin-top: 0.5em;
+    padding: 0.25em;
+    box-sizing: border-box;
+}
+
+.radios,
+.selectmenu,
+.commentbox {
+    margin-top: 1.5em;
+}
+
+.radios > label:first-child {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.selectmenu label,
+.commentbox label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+select {
+    width: 100%;
+    height: 35px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+form .button {
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+form .button input {
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: #4977D1;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+form .button input:hover {
+    background-color: #9ed034;
+}
