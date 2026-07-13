@@ -5,18 +5,35 @@ header {
 }
 
 #home header {
-    background: no-repeat lightgrey url(images/cliff_ocean.jpg);
-    background-size: 1500px;
+    background-color: lightgrey;
+    background-image: url("images/cliff_ocean.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#cliffs header {
+    background-color: lightgrey;
+    background-image: url("images/forest_cliff.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #activities header {
-    background: no-repeat lightgrey url(images/runfly.jpg);
-    background-size: 1500px;
+    background-color: lightgrey;
+    background-image: url("images/runfly.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #contact header {
-    background: no-repeat lightgrey url(images/cliff_rock.jpg);
-    background-size: 1500px;
+    background-color: lightgrey;
+    background-image: url("images/cliff_rock.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .main-header {
@@ -45,10 +62,15 @@ header {
 }
 
 .main-menu li {
-    list-style-type: none;
+    float: left;
     display: inline-block;
-    padding: 0.5em 1em;
-    border-left: solid 1px rgba(202, 204, 202, 0.6);
+    padding-left: 25px;
+    padding-right: 25px;
+    border-left: 1px solid rgba(202, 204, 202, 0.6);
+    list-style-type: none;
+    line-height: 100px;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
 .main-menu li:first-child {
@@ -64,25 +86,43 @@ header {
     color: #9ed034;
 }
 
-.main-menu li.active a {
-    color: #9ed034;
+.main-menu li.active {
+    background-color: #9ed034;
+    border: none;
 }
 
-.main-menu li.active a:hover {
-    color: #b6e74a;
+.main-menu li.active a {
+    color: #fff;
 }
+
 
 /* Main */
 
 main {
+    padding: 3em 6em 3em 5.5em;
+    margin: 2em 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-main h1,
-main h2,
+main h1 {
+    padding-bottom: 0.5em;
+    color: #9ed034;
+    font-size: 2.5em;
+}
+
+main h2 {
+    color: #9ed034;
+    font-size: 1.7em;
+}
+
 main h3 {
     color: #9ed034;
 }
+
+main p {
+    line-height: 1.5em;
+}
+
 
 /* Partners */
 
@@ -319,4 +359,33 @@ form .button input {
 
 form .button input:hover {
     background-color: #9ed034;
+}
+/* Cliffs */
+
+#cliffs main .cliffs {
+    width: 90%;
+    margin: 0 auto;
+    background: none;
+}
+
+#cliffs main .cliffs .site {
+    display: inline-block;
+    width: 45%;
+    margin: 2.5em 1.2em 0 1.2em;
+    vertical-align: top;
+}
+
+#cliffs main .cliffs .site h3 {
+    height: 2em;
+    margin: 0;
+    padding-top: 0.55em;
+    background-color: #852B1B;
+    color: #fff;
+    text-align: center;
+}
+
+#cliffs main .cliffs .site img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
