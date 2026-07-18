@@ -132,6 +132,7 @@
     </div>
 
 </body>
+
 <!-- JavaScript Codes -->
 <script>
     // Create a time data function
@@ -167,17 +168,36 @@
             ampm = "AM";
         }
 
-        // Assemble time format
-        var time = hr + ":" + min + ":" + sec + " " + ampm;
+        // Get local time zone
+        var timeZoneName = new Intl.DateTimeFormat("en-US", {
+            timeZoneName: "short"
+        }).formatToParts(d).find(function (part) {
+            return part.type === "timeZoneName";
+        }).value;
 
-        // Display time inside the clock element
+        // Convert daylight and standard abbreviations
+        if (timeZoneName === "CST" || timeZoneName === "CDT") {
+            timeZoneName = "CT";
+        } else if (timeZoneName === "EST" || timeZoneName === "EDT") {
+            timeZoneName = "ET";
+        } else if (timeZoneName === "MST" || timeZoneName === "MDT") {
+            timeZoneName = "MT";
+        } else if (timeZoneName === "PST" || timeZoneName === "PDT") {
+            timeZoneName = "PT";
+        }
+
+        // Assemble time format
+        var time =
+            hr + ":" + min + ":" + sec + " " + ampm + " " + timeZoneName;
+
+        // Display time
         document.getElementById("clock").innerText = time;
     }
 
-    // Run once immediately
+    // Initial run
     currentTime();
 
-    // Run again every 1 second
+    // Update every second
     setInterval(currentTime, 1000);
 </script>
 
