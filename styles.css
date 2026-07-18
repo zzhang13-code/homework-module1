@@ -37,11 +37,11 @@ header {
 }
 
 .main-header {
-    background-color: rgba(255, 255, 255, 0.8);
     width: 700px;
     min-height: 100px;
     height: 100px;
     margin: 2em auto 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .main-header .logo img {
@@ -62,13 +62,13 @@ header {
 }
 
 .main-menu li {
-    float: left;
     display: inline-block;
+    float: left;
     padding-left: 25px;
     padding-right: 25px;
     border-left: 1px solid rgba(202, 204, 202, 0.6);
-    list-style-type: none;
     line-height: 100px;
+    list-style-type: none;
     text-transform: uppercase;
     font-size: 14px;
 }
@@ -78,8 +78,8 @@ header {
 }
 
 .main-menu li a {
-    text-decoration: none;
     color: #888;
+    text-decoration: none;
 }
 
 .main-menu li a:hover {
@@ -87,20 +87,19 @@ header {
 }
 
 .main-menu li.active {
-    background-color: #9ed034;
     border: none;
+    background-color: #9ed034;
 }
 
 .main-menu li.active a {
     color: #fff;
 }
 
-
 /* Main */
 
 main {
-    padding: 3em 6em 3em 5.5em;
     margin: 2em 0;
+    padding: 3em 6em 3em 5.5em;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -123,30 +122,50 @@ main p {
     line-height: 1.5em;
 }
 
+/* Home Page Time Display */
+
+#timeofday {
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg,
+            rgba(251, 215, 139, 1) 0%,
+            rgba(118, 213, 245, 1) 100%);
+    color: #3a3a3a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#clock {
+    margin-left: 5px;
+    color: #125688;
+    font-weight: bold;
+}
 
 /* Partners */
 
-section {
+.partners-section {
     width: 100%;
     background-color: #4288C3;
 }
 
-section #partners {
+#partners {
     width: 1200px;
-    padding: 2em 0;
     margin: 0 auto;
+    padding: 2em 0;
     text-align: center;
 }
 
-section #partners .partner {
+#partners .partner {
     display: inline-block;
     margin: 0 0.75em;
     padding: 1.3em 1.5em;
-    background-color: #fff;
     border-radius: 50%;
+    background-color: #fff;
 }
 
-section #partners .partner img {
+#partners .partner img {
     width: 90px;
     height: 90px;
 }
@@ -161,15 +180,15 @@ footer {
 }
 
 footer #nondisclaimer .copy {
-    padding: 3.5em 3.5em 3.5em 13em;
     float: left;
+    padding: 3.5em 3.5em 3.5em 13em;
     font-size: 0.9em;
 }
 
 footer #nondisclaimer .social {
-    padding: 2.5em;
-    margin-right: 9.25em;
     float: right;
+    margin-right: 9.25em;
+    padding: 2.5em;
 }
 
 footer #disclaimer {
@@ -183,12 +202,12 @@ footer #disclaimer p {
 }
 
 footer .social .fa {
-    padding: 15px;
     width: 18px;
     margin: 0 4px;
-    font-size: 1.3em;
+    padding: 15px;
     text-align: center;
     text-decoration: none;
+    font-size: 1.3em;
 }
 
 footer .social .fa:hover {
@@ -318,7 +337,7 @@ form label {
     margin-top: 1.5em;
 }
 
-.radios > label:first-child {
+.radios>label:first-child {
     display: block;
     margin-bottom: 0.5em;
 }
@@ -360,6 +379,7 @@ form .button input {
 form .button input:hover {
     background-color: #9ed034;
 }
+
 /* Cliffs */
 
 #cliffs main .cliffs {
@@ -388,27 +408,4 @@ form .button input:hover {
     display: block;
     width: 100%;
     height: auto;
-}
-
-/* Home Page Time Display */
-
-#timeofday {
-    width: 100%;
-    min-height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #3a3a3a;
-    background: linear-gradient(
-        0deg,
-        rgba(251, 215, 139, 1) 0%,
-        rgba(118, 213, 245, 1) 100%
-    );
-}
-
-#clock {
-    margin-left: 5px;
-    color: #125688;
-    font-weight: bold;
 }
