@@ -389,3 +389,26 @@ form .button input:hover {
     width: 100%;
     height: auto;
 }
+
+/* Home Page Time Display */
+
+#timeofday {
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3a3a3a;
+    background: linear-gradient(
+        0deg,
+        rgba(251, 215, 139, 1) 0%,
+        rgba(118, 213, 245, 1) 100%
+    );
+}
+
+#clock {
+    margin-left: 5px;
+    color: #125688;
+    font-weight: bold;
+}
