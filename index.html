@@ -5,7 +5,8 @@
     <title>Great Cliffs</title>
     <meta charset="utf-8">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -74,34 +75,36 @@
 
         </main>
 
-        <section class="partners-section">
+        <section>
 
             <ul id="partners">
-                <!-- 
-        <li class="partner">
-            <img src="images/partners/partner-bustour.png" alt="Partner Bus Tour">
-        </li>
 
-        <li class="partner">
-            <img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental">
-        </li>
+                <!--
+                <li class="partner">
+                    <img src="images/partners/partner-bustour.png" alt="Partner Bus Tours">
+                </li>
 
-        <li class="partner">
-            <img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure">
-        </li>
+                <li class="partner">
+                    <img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental">
+                </li>
 
-        <li class="partner">
-            <img src="images/partners/partner-collegetours.png" alt="Partner College Tours">
-        </li>
+                <li class="partner">
+                    <img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure">
+                </li>
 
-        <li class="partner">
-            <img src="images/partners/partner-rentalbike.png" alt="Partner Rental Bike">
-        </li>
+                <li class="partner">
+                    <img src="images/partners/partner-collegetours.png" alt="Partner College Tours">
+                </li>
 
-        <li class="partner">
-            <img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group">
-        </li>
-        -->
+                <li class="partner">
+                    <img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals">
+                </li>
+
+                <li class="partner">
+                    <img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group">
+                </li>
+                -->
+
             </ul>
 
         </section>
@@ -133,29 +136,23 @@
 
     </div>
 
-    <!-- JavaScript Codes -->
     <script>
-        // Create a time data function
         function currentTime() {
 
-            // Declare variables
             var d = new Date();
             var hr = d.getHours();
             var min = d.getMinutes();
             var sec = d.getSeconds();
             var ampm;
 
-            // Add 0 to single digits for seconds
             if (sec < 10) {
                 sec = "0" + sec;
             }
 
-            // Add 0 to single digits for minutes
             if (min < 10) {
                 min = "0" + min;
             }
 
-            // Determine AM or PM
             if (hr === 12) {
                 ampm = "PM";
             } else if (hr > 12) {
@@ -165,25 +162,22 @@
                 ampm = "AM";
             }
 
-            // Fix midnight display
             if (hr === 0) {
                 hr = 12;
             }
 
-            // Assemble time format
             var time = hr + ":" + min + ":" + sec + " " + ampm;
 
-            // Display current local time
             document.getElementById("clock").innerText = time;
         }
 
-        // Initial run
         currentTime();
 
-        // Run time function every second
         setInterval(currentTime, 1000);
     </script>
-<script src="js/site.js"></script>
+
+    <script src="js/site.js"></script>
+
 </body>
 
 </html>
