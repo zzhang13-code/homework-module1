@@ -431,3 +431,19 @@ form .button input:hover {
     width: 100%;
     height: auto;
 }
+
+.contact-option {
+    display: none;
+    margin-top: 15px;
+}
+
+.contactmethod {
+    margin-top: 20px;
+}
+
+.contactmethod label,
+.contactmethod select,
+.contactmethod input {
+    display: block;
+    margin-bottom: 10px;
+}
