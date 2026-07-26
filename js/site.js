@@ -47,3 +47,33 @@ if (partnersUl) {
     // Insert the generated partner items into the list
     partnersUl.innerHTML = htmlPlaceholder;
 }
+
+const contactMethod = document.getElementById("contact-method");
+const emailBox = document.getElementById("email-box");
+const phoneBox = document.getElementById("phone-box");
+const emailInput = document.getElementById("email");
+const phoneInput = document.getElementById("phone");
+
+if (contactMethod) {
+
+    contactMethod.addEventListener("change", function () {
+
+        emailBox.style.display = "none";
+        phoneBox.style.display = "none";
+
+        emailInput.required = false;
+        phoneInput.required = false;
+
+        if (contactMethod.value === "email") {
+            emailBox.style.display = "block";
+            emailInput.required = true;
+        }
+
+        if (contactMethod.value === "phone") {
+            phoneBox.style.display = "block";
+            phoneInput.required = true;
+        }
+
+    });
+
+}git add .
