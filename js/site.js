@@ -76,4 +76,4 @@ if (contactMethod) {
 
     });
 
-}git add .
+}
