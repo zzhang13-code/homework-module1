@@ -447,3 +447,23 @@ form .button input:hover {
     display: block;
     margin-bottom: 10px;
 }
+
+/* Activity table interaction */
+
+#activities table tbody td.selectable {
+    cursor: pointer;
+}
+
+#activities table tbody td.selectable:hover {
+    background-color: #dff0d8;
+}
+
+#activities table tbody td.selected {
+    background-color: #8dc63f;
+    color: white;
+    font-weight: bold;
+}
+
+#activities table tbody td.unavailable {
+    cursor: default;
+}
