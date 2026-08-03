@@ -467,3 +467,66 @@ form .button input:hover {
 #activities table tbody td.unavailable {
     cursor: default;
 }
+
+/* Selected activities display box */
+
+#activities main #displaySelected {
+    visibility: hidden;
+    width: 600px;
+    margin: 0 auto;
+    padding: 0.75em;
+    border: 2px solid #9ed034;
+    box-sizing: border-box;
+}
+
+#activities main #displaySelected #result,
+#activities main #displaySelected #sendinfo {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+}
+
+#activities main #displaySelected #result {
+    min-height: 50px;
+    width: 300px;
+    padding: 0;
+}
+
+#activities main #displaySelected #result h4 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 1.15em;
+}
+
+#activities main #displaySelected #result p {
+    margin: 0.5em 0;
+}
+
+#activities main #displaySelected #result p span {
+    color: #4977D1;
+    font-weight: bold;
+}
+
+#activities main #displaySelected #sendinfo {
+    width: 260px;
+}
+
+#activities main #displaySelected #sendinfo input[type="email"] {
+    width: 180px;
+    height: 28px;
+    padding: 0.25em;
+    box-sizing: border-box;
+}
+
+#activities main #displaySelected #sendinfo button {
+    height: 28px;
+    padding: 0 0.75em;
+    border: none;
+    background-color: #4977D1;
+    color: #fff;
+    cursor: pointer;
+}
+
+#activities main #displaySelected #sendinfo button:hover {
+    background-color: #9ed034;
+}
